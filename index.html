@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/chess-frog/tode.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Game</title>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "firebase/app": "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js",
+        "firebase/firestore": "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"
+      }
+    }
+    </script>
+    <script type="module" crossorigin src="/chess-frog/assets/index-BQcT1X98.js"></script>
+    <link rel="stylesheet" crossorigin href="/chess-frog/assets/index-E3eGw7Y0.css">
+  </head>
+  <body>
+    <div class="score">0</div>
+    <canvas class="game"></canvas>
+    <div class="attack-bar">
+      <div class="attack-bar-fill"></div>
+    </div>
+    <div class="main-menu">
+      <div class="menu-left">
+        <div class="scoreboard-column">
+          <h2 class="scoreboard-title">Global Endless Scoreboard</h2>
+          <div class="scoreboard-list" id="scoreboard">
+          </div>
+        </div>
+      </div>
+      <div class="menu-right">
+        <h1 class="menu-title">Game</h1>
+        <div class="menu-buttons">
+          <button class="menu-button" id="btn-level-mode">Level Mode</button>
+          <button class="menu-button" id="btn-endless">Endless</button>
+          <button class="menu-button" id="btn-tutorial">Tutorial</button>
+        </div>
+      </div>
+    </div>
+    <div class="name-dialog" id="name-dialog">
+      <div class="name-dialog-content">
+        <h2 class="name-dialog-title">Enter Your Name</h2>
+        <input type="text" class="name-input" id="name-input" placeholder="Your name" maxlength="20" />
+        <button class="name-dialog-button" id="btn-name-submit">Start</button>
+      </div>
+    </div>
+  </body>
+</html>
